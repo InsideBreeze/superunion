@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Image from 'next/image'
+import Description from '@/components/Description'
 
 interface Props {
 
@@ -7,6 +8,7 @@ interface Props {
 export default function AboutPage({}: Props) {
     return (
         <main className=''>
+
             <section className='flex pl-[26px] pr-6 xl:pl-[70px] xl:pr-[95px] xl:mt-[67px] mt-[25px] xl:space-x-[62px] space-x-[23px]'>
                 <Image src='/images/about_us_person.png' alt='person' height={600} width={750}
                     className='w-[180px] h-[230] xl:w-[495px] xl:h-[617px]'
@@ -28,10 +30,22 @@ export default function AboutPage({}: Props) {
                         </p>
                         <div className='absolute xl:-right-[18px] xl:top-[35px] xl:w-[7px] xl:h-[66px] bg-[#0052D9] top-[13px] -right-[7px] w-[3px] h-[33px]' />
                     </div>
-
                 </div>
             </section>
-            <section className='flex'>
+
+            <section className='px-[26px] mt-[45px] xl:mt-[120px] xl:px-[70px]'>
+                <Description title='Why Choose US'>
+                    <div className='grid grid-cols-3 xl:gap-14 gap-[21px] mt-2 xl:mt-[21px]'>
+                        <div className='border xl:h-[400px] h-[150px]'>
+
+                        </div>
+                        <div className='border xl:h-[400px] h-[150px]'>
+                        </div>
+                        <div className='border xl:h-[408px] h-[150px]'>
+                        </div>
+                    </div>
+                </Description>
+
             </section>
             {/* contact */}
             <section className='flex'>

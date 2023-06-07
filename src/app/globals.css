@@ -10,5 +10,6 @@
 
 
 html, body, :root {
-  --blue: #0052D9
+  --blue: #0052D9;
+  min-height: 100vh;
 }
