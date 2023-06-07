@@ -42,7 +42,7 @@ export default function AboutPage({}: Props) {
                             <button className='w-[75px] h-[15px] xl:w-[200px] xl:h-[40px] xl:text-[18px] text-[7px] bg-[#0052D9] text-white outline-none'>
                                 One stop solution
                             </button>
-                            <p className='w-[120px] text-[6px] leading-[2em] text-[#2F2F2F] xl:w-[280px] xl:text-[13px] xl:leading-[2em]'>
+                            <p className='w-[80px] text-[4px] leading-[2em] text-[#2F2F2F] xl:w-[280px] xl:text-[13px] xl:leading-[2em]'>
                                 Includes purchasing product(such as Alibaba), picking up cargo, inspection, temporary storage, FBA preparation, customs declaration and clearance, deliver to Amazon warehouse or other destination address.
                             </p>
                         </div>
@@ -52,7 +52,7 @@ export default function AboutPage({}: Props) {
                             <button className='w-[75px] h-[15px] xl:w-[200px] xl:h-[40px] xl:text-[18px] text-[7px] bg-[#0052D9] text-white outline-none'>
                                 High quality service
                             </button>
-                            <p className='w-[120px] text-[6px] leading-[2em] text-[#2F2F2F] xl:w-[280px] xl:text-[13px] xl:leading-[2em]'>
+                            <p className='w-[80px] text-[4px] leading-[2em] text-[#2F2F2F] xl:w-[280px] xl:text-[13px] xl:leading-[2em]'>
                                 We will assign you a personal advisor who will communicate with you anytime to keep you updated on the progress of your cargo and answer any questions you may have.
                             </p>
                         </div>
@@ -62,17 +62,18 @@ export default function AboutPage({}: Props) {
                             <button className='w-[75px] h-[15px] xl:w-[200px] xl:h-[40px] xl:text-[18px] text-[7px] bg-[#0052D9] text-white outline-none'>
                                 No hidden charges
                             </button>
-                            <p className='w-[120px] text-[6px] leading-[2em] text-[#2F2F2F] xl:w-[280px] xl:text-[13px] xl:leading-[2em]'>
+                            <p className='w-[80px] text-[4px] leading-[2em] text-[#2F2F2F] xl:w-[280px] xl:text-[13px] xl:leading-[2em]'>
                                 All-inclusive pricing, once we have provided you a formal quote, the price will not change, you don’t have to worry about any additional fees after the shipment begins.
                             </p>
                         </div>
-
                     </div>
                 </Description>
-
             </section>
             {/* contact */}
             <section className='flex'>
+                <p className='h-10'>
+                    La
+                    </p>
             </section>
 
         </main>
