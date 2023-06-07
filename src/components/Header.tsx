@@ -6,7 +6,7 @@ import * as React from 'react'
 export default function Header() {
     return (
         <header className='bg-[url("/images/bg.png")] lg:h-[350px] bg-cover h-[130px]'>
-            <nav className='z-1 text-green h-[40px] lg:h-[109px] bg-white bg-opacity-50 px-[50px] py-[14px] lg:px-[130px] lg:py-[36px]'>
+            <nav className='z-1 text-green h-[60px] lg:h-[109px] bg-white bg-opacity-50 px-[50px] py-[14px] lg:px-[130px] lg:py-[36px] text-[rgba(51, 51, 51, 1)]'>
                 <div className='border border-[black] flex justify-between items-center'>
                     {/* icon */}
                     <div>
