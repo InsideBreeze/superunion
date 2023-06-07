@@ -73,15 +73,56 @@ export default function AboutPage({}: Props) {
 
                 <div className='grid grid-cols-2 gap-5 xl:gap-[77px] xl:mt-[57px] mt-[21px]'>
 
-                    <div className='border border-[red] space-y-6 xl:space-y-[60px]'>
+                    <div className=' space-y-8 xl:space-y-[80px]'>
                         { /* inputs */}
-                        <input className='w-full h-[15px] xl:h-10 border border-[var(--blue)] outline-none xl:pl-5 pl-2 text-[6px] xl:text-[14px]' placeholder="Your name*"/>
-                        <input className='w-full h-[15px] xl:h-10 border border-[var(--blue)] outline-none xl:pl-5 pl-2 text-[6px] xl:text-[14px]' placeholder="Your email address"/>
-                        <input className='w-full h-[15px] xl:h-10 border border-[var(--blue)] outline-none xl:pl-5 pl-2 text-[6px] xl:text-[14px]' placeholder="Your phone number"/>
+                        <input className='w-full h-[15px] xl:h-10 border border-[var(--blue)] outline-none xl:pl-5 pl-2 text-[6px] xl:text-[14px]' placeholder="Your name*" />
+                        <input className='w-full h-[15px] xl:h-10 border border-[var(--blue)] outline-none xl:pl-5 pl-2 text-[6px] xl:text-[14px]' placeholder="Your email address" />
+                        <input className='w-full h-[15px] xl:h-10 border border-[var(--blue)] outline-none xl:pl-5 pl-2 text-[6px] xl:text-[14px]' placeholder="Your phone number" />
 
+                        <textarea placeholder='Your message here' className='xl:pl-5 xl:pt-5 pt-2 pl-2 text-[6px] xl:text-[14px] w-full outline-none border border-[var(--blue)] xl:min-h-[218px] xl:max-h-[218px] min-h-[80px] max-h-[80px]' />
+
+                        <button className='w-full h-6 xl:h-[60px] bg-[var(--blue)] text-white xl:text-xl text-[9px]'>
+                            Submit
+                        </button>
                     </div>
-                    <div className='border border-[red]'>
-                        <p>Send an email here to get free consulting and quote:</p>
+                    <div className='text-[#333333]'>
+                        <p className='xl:pt-[5px] pt-[2px] text-[var(--blue)] xl:text-xl text-[8px]'>Send an email here to get free consulting and quote:</p>
+                        <div className='flex xl:space-x-[15px] space-x-[6px] items-center mt-[9px] mb-3 xl:mt-[25px] xl:mb-[31px]'>
+                            <Image src='/images/message.png' width={20} height={20} alt='message'
+                                className='xl:h-4 xl:w-4 h-[6px] w-[6px]'
+                            />
+                            <p className='text-[6px] xl:text-[16px]'>Email：overseas@superunionlogistics.com</p>
+                        </div>
+                        <div className='flex xl:space-x-[15px] space-x-[6px] items-center mt-[9px] mb-3 xl:mt-[31px] xl:mb-[32px]'>
+                            <Image src='/images/phone.png' width={20} height={20} alt='message'
+                                className='xl:h-4 xl:w-4 h-[6px] w-[6px]'
+                            />
+                            <p className='text-[6px] xl:text-[16px]'>Telephone: +86 19159157982</p>
+                        </div>
+                        <div className='flex xl:space-x-[15px] space-x-[6px] items-center mt-[9px] mb-3 xl:mt-[25px] xl:mb-[31px]'>
+                            <Image src='/images/phone.png' width={20} height={20} alt='message'
+                                className='xl:h-4 xl:w-4 h-[6px] w-[6px]'
+                            />
+                            <p className='text-[6px] xl:text-[16px]'>Whatsapp/Wechat: +86 19159157982</p>
+                        </div>
+                        <div className='flex xl:space-x-[15px] space-x-[6px] items-center mt-[9px] mb-2 xl:mt-[25px] xl:mb-[19px]'>
+                            <Image src='/images/scan.png' width={20} height={20} alt='message'
+                                className='xl:h-4 xl:w-4 h-[6px] w-[6px]'
+                            />
+                            <p className='text-[6px] xl:text-[16px] text-[var(--blue)]'>Mobile scan code to add friends</p>
+                        </div>
+                        <div className='flex space-x-[9px] xl:space-x-6'>
+                            <Image src="/images/code0.png" alt='wechat code' height={950} width={1000} className='object-cover xl:w-[97px] xl:h-[133px] x-9 h-[50px]' />
+                            <Image src="/images/code1.png" alt='wechat code' height={950} width={1000} className='object-cover xl:w-[97px] xl:h-[133px] x-9 h-[50px]' />
+                        </div>
+                        <p className='xl:text-[14px] text-[5px] py-[7px] lg:py-[19px]'>Contact us：We are excited to hear from you!</p>
+                        <Image src='/images/location.png' alt='location' className='xl:h-[240px] xl:w-[484px] h-[98px] w-[182px] object-cover' height={600} width={650} />
+                        <div className='flex items-center xl:space-x-[10px] space-x-[6px] xl:mt-[16px] mt-1'>
+                            <Image src='/images/lo.png' width={20} height={20} alt='message'
+                                className='xl:h-4 xl:w-4 h-[6px] w-[6px]'
+                            />
+                            <p className='xl:text-[14px] text-[5px]'>公司地址：深圳市……</p>
+                        </div>
                     </div>
                 </div>
 
