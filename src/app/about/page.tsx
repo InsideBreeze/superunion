@@ -7,8 +7,7 @@ interface Props {
 }
 export default function AboutPage({}: Props) {
     return (
-        <main className=''>
-
+        <main className='xl:mb-[88px] mb-[33px]'>
             <section className='flex pl-[26px] pr-6 xl:pl-[70px] xl:pr-[95px] xl:mt-[67px] mt-[25px] xl:space-x-[62px] space-x-[23px]'>
                 <Image src='/images/about_us_person.png' alt='person' height={600} width={750}
                     className='w-[180px] h-[230] xl:w-[495px] xl:h-[617px]'

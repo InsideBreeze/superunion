@@ -4,5 +4,5 @@ interface Props {
 
 }
 export default function Workflow({}: Props) {
-    return <div>Hello</div>
+    return <div className='h-[1000px]'>Hello</div>
 }
