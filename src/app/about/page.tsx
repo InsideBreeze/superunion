@@ -36,13 +36,37 @@ export default function AboutPage({}: Props) {
             <section className='px-[26px] mt-[45px] xl:mt-[120px] xl:px-[70px]'>
                 <Description title='Why Choose US'>
                     <div className='grid grid-cols-3 xl:gap-14 gap-[21px] mt-2 xl:mt-[21px]'>
-                        <div className='border xl:h-[400px] h-[150px]'>
+                        <div className='border xl:h-[400px] h-[150px] flex flex-col items-center xl:pt-[43px] pt-4 xl:space-y-[30px] space-y-3'>
+                            <Image src='/images/one_stop.png' alt='one stop' width={80} height={60}
+                                className='h-6 w-6 xl:h-[60px] xl:w-[60px]' />
+                            <button className='w-[75px] h-[15px] xl:w-[200px] xl:h-[40px] xl:text-[18px] text-[7px] bg-[#0052D9] text-white outline-none'>
+                                One stop solution
+                            </button>
+                            <p className='w-[120px] text-[6px] leading-[2em] text-[#2F2F2F] xl:w-[280px] xl:text-[13px] xl:leading-[2em]'>
+                                Includes purchasing product(such as Alibaba), picking up cargo, inspection, temporary storage, FBA preparation, customs declaration and clearance, deliver to Amazon warehouse or other destination address.
+                            </p>
+                        </div>
+                        <div className='border xl:h-[400px] h-[150px] flex flex-col items-center xl:pt-[43px] pt-4 xl:space-y-[30px] space-y-3'>
+                            <Image src='/images/high_quality.png' alt='one stop' width={80} height={60}
+                                className='h-6 w-6 xl:h-[60px] xl:w-[60px]' />
+                            <button className='w-[75px] h-[15px] xl:w-[200px] xl:h-[40px] xl:text-[18px] text-[7px] bg-[#0052D9] text-white outline-none'>
+                                High quality service
+                            </button>
+                            <p className='w-[120px] text-[6px] leading-[2em] text-[#2F2F2F] xl:w-[280px] xl:text-[13px] xl:leading-[2em]'>
+                                We will assign you a personal advisor who will communicate with you anytime to keep you updated on the progress of your cargo and answer any questions you may have.
+                            </p>
+                        </div>
+                        <div className='border xl:h-[400px] h-[150px] flex flex-col items-center xl:pt-[43px] pt-4 xl:space-y-[30px] space-y-3'>
+                            <Image src='/images/hidden.png' alt='no hidden' width={80} height={60}
+                                className='h-6 w-6 xl:h-[60px] xl:w-[60px]' />
+                            <button className='w-[75px] h-[15px] xl:w-[200px] xl:h-[40px] xl:text-[18px] text-[7px] bg-[#0052D9] text-white outline-none'>
+                                No hidden charges
+                            </button>
+                            <p className='w-[120px] text-[6px] leading-[2em] text-[#2F2F2F] xl:w-[280px] xl:text-[13px] xl:leading-[2em]'>
+                                All-inclusive pricing, once we have provided you a formal quote, the price will not change, you don’t have to worry about any additional fees after the shipment begins.
+                            </p>
+                        </div>
 
-                        </div>
-                        <div className='border xl:h-[400px] h-[150px]'>
-                        </div>
-                        <div className='border xl:h-[408px] h-[150px]'>
-                        </div>
                     </div>
                 </Description>
 
