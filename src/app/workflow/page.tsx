@@ -7,9 +7,12 @@ import Work from '@/components/Work'
 
 export default function Workflow() {
     return (
-        <main className='flex flex-col items-center justify-center bg-white xl:mb-[96px] relative'>
-            <button className='mt-[42px] mb-8 h-[160px] w-[29px] xl:w-[427px] xl:h-[78px] bg-[var(--blue)] text-white
+        <main className=' bg-white xl:mb-[96px] relative'>
+            <div className='flex items-center justify-center h-full z-1000 mt-[42px] mb-8'>
+            <button className=' bg-[var(--blue)] text-white
+                               h-[160px] w-[29px] xl:w-[427px] xl:h-[78px]
                                font-bold xl:text-[44px] outline-none'>Our Workflow</button>
+            </div>
 
             <Image src="/images/workflow_person.png" alt='person' width={800} height={800} className='absolute left-0 top-0 xl:h-[650px] xl:w-[650px]' />
 
