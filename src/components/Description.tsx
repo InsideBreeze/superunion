@@ -13,7 +13,7 @@ export default function Description({ title, children, className }: Props) {
 
     return (
         <section className='xl:px-[70px] sm:px-[16px] px-1'>
-      <p className={twMerge('text-[8px] text-[var(--blue)] border border-l border-l-[var(--blue)] pl-[9px] border-l-[5px]', className)}>{title}</p>
+      <p className={twMerge('text-[8px] text-[var(--blue)] border-l border-l-[var(--blue)] pl-[9px] border-l-[5px]', className)}>{title}</p>
       {children}
     </section>
   )

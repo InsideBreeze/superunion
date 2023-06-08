@@ -28,6 +28,10 @@ export default function Header() {
                         <Link href='/workflow' className={`${pathname === '/workflow' && 'active_link'}`}>
                             Workflow
                         </Link>
+                                                <Link href='/tracking' className={`${pathname === '/tracking' && 'active_link'}`}>
+                            Tracking
+                        </Link>
+
                     </div>
                 </div>
             </nav>

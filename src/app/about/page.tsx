@@ -7,13 +7,13 @@ interface Props {
 }
 export default function AboutPage({}: Props) {
     return (
-        <main className='xl:mb-[88px] mb-[33px]'>
-            <section className='flex pl-[26px] pr-6 xl:pl-[70px] xl:pr-[95px] xl:mt-[67px] mt-[25px] xl:space-x-[62px] space-x-[23px]'>
+        <main className='bg-white'>
+            <section className='flex pl-[26px] pr-6 xl:pl-[70px] xl:pr-[95px] xl:pt-[67px] pt-[25px] xl:space-x-[62px] space-x-[23px]'>
                 <Image src='/images/about_us_person.png' alt='person' height={600} width={750}
-                    className='w-[180px] h-[230] xl:w-[495px] xl:h-[617px]'
+                    className='w-[180px] h-[230] xl:w-[495px] xl:h-[617px] max-w-[500px] max-h-[750px]'
                 />
-                <div className='w-[230px] xl:w-[560px] border border-[red]'>
-                    <h3 className='text-center text-[8px] font-bold text-[var(--blue)] xl:text-xl mt-[6px] lg:mt-[16px]'>About us</h3>
+                <div className='w-[230px] xl:w-[560px]'>
+                    <h3 className='text-center text-[8px] font-bold text-[var(--blue)] xl:text-xl pt-[6px] lg:pt-[16px]'>About us</h3>
                     <div className='space-y-1 lg:space-y-2 relative'>
                         <p className='text-[7px] lg:text-[14px] text-[#2F2F2F] leading-[1.5em] tracking-[0.01em] lg:leading-[30px] lg:tracking-[0.02em]'>
                             Superunion is an international shipping agency, we are dedicate to providing secure, fast and low-cost international freight shipping service from China to the world, especially for door-to-door delivery for cross-border E-commerce business.
@@ -70,7 +70,7 @@ export default function AboutPage({}: Props) {
             </div>
 
             {/* contact */}
-                        <div className='xl:mt-[120px] mt-[46px]'>
+                        <div className='xl:mt-[120px] mt-[46px] pb-[50px]'>
 
             <Description title='Contact us' className='font-semibold text-[12px] xl:text-[32px]'>
 
@@ -114,12 +114,15 @@ export default function AboutPage({}: Props) {
                             />
                             <p className='text-[6px] xl:text-[16px] text-[var(--blue)]'>Mobile scan code to add friends</p>
                         </div>
-                        <div className='flex space-x-[9px] xl:space-x-6'>
+                        <div className='inline-flex space-x-[9px] xl:space-x-6'>
                             <Image src="/images/code0.png" alt='wechat code' height={950} width={1000} className='object-cover xl:w-[97px] xl:h-[133px] x-9 h-[50px]' />
-                            <Image src="/images/code1.png" alt='wechat code' height={950} width={1000} className='object-cover xl:w-[97px] xl:h-[133px] x-9 h-[50px]' />
-                        </div>
-                        <p className='xl:text-[14px] text-[5px] py-[7px] lg:py-[19px]'>Contact us：We are excited to hear from you!</p>
-                        <Image src='/images/location.png' alt='location' className='xl:h-[240px] xl:w-[484px] h-[98px] w-[182px] object-cover' height={600} width={650} />
+                            <Image src="/images/code1.png" alt='wechat code' height={950} width={1000} className='object-cover
+                                        xl:w-[97px] xl:h-[133px] x-9 h-[50px]' />
+                            </div>
+                        <p className='xl:text-[14px] text-[5px] py-[7px] lg:py-[19px]'>
+                            Contact us：We are excited to hear from you!</p>
+                        <Image src='/images/location.png' alt='location' className='
+                                    xl:h-[240px] xl:w-[484px] h-[98px] w-[182px] object-cover' height={600} width={650} />
                         <div className='flex items-center xl:space-x-[10px] space-x-[6px] xl:mt-[16px] mt-1'>
                             <Image src='/images/lo.png' width={20} height={20} alt='message'
                                 className='xl:h-4 xl:w-4 h-[6px] w-[6px]'
@@ -131,7 +134,7 @@ export default function AboutPage({}: Props) {
 
             </Description>
             </div>
-
+            <div className='bg-gray-100 xl:h-[88px]'/>
         </main>
     )
 }
