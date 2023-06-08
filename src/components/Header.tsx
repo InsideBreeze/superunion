@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import * as React from 'react'
 import { usePathname } from 'next/navigation'
+import { twMerge } from 'tailwind-merge'
 
 /* should be client component */
 export default function Header() {
@@ -9,9 +10,9 @@ export default function Header() {
     const pathname = usePathname()
 
     return (
-        <header className='bg-[url("/images/bg.png")] xl:h-[350px] bg-cover h-[130px]'>
+        <header className={twMerge('bg-[url("/images/bg.png")] bg-cover relative', pathname === '/' ? 'xl:h-[500px] h-[255px]' : 'h-[130px] xl:h-[350px]')}>
             <nav className='z-1 text-green h-[60px] xl:h-[109px] bg-white bg-opacity-50 px-[30px] py-[14px] xl:px-[130px] xl:py-[36px] text-[rgba(51,51,51,1)]'>
-                <div className='border border-[black] flex justify-between items-center'>
+                <div className='flex justify-between items-center'>
                     {/* icon */}
                     <div>
                         superunion
@@ -27,10 +28,15 @@ export default function Header() {
                         <Link href='/workflow' className={`${pathname === '/workflow' && 'active_link'}`}>
                             Workflow
                         </Link>
-
                     </div>
                 </div>
             </nav>
+            <div className={twMerge(
+                           'absolute left-[26px] top-[171px] xl:top-[350px] xl:left-[70px] font-bold xl:text-[34px] text-[13px] text-white'
+                , pathname === "/" ? 'block' : 'hidden')}>
+                <p>Your reliable shipping solution provider</p>
+                <p>Ship your business here!</p>
+            </div>
         </header>
     )
 }

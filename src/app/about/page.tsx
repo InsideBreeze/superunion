@@ -32,6 +32,7 @@ export default function AboutPage({}: Props) {
                 </div>
             </section>
 
+            <div className='xl:mt-[120px] mt-[46px]'>
             <Description title='Why Choose US' className='xl:text-xl'>
                 <div className='grid grid-cols-3 xl:gap-14 gap-[21px] mt-2 xl:mt-[21px]'>
                     <div className='border xl:h-[400px] h-[150px] flex flex-col items-center xl:pt-[43px] pt-4 xl:space-y-[30px] space-y-3'>
@@ -66,8 +67,11 @@ export default function AboutPage({}: Props) {
                     </div>
                 </div>
             </Description>
+            </div>
 
             {/* contact */}
+                        <div className='xl:mt-[120px] mt-[46px]'>
+
             <Description title='Contact us' className='font-semibold text-[12px] xl:text-[32px]'>
 
                 <div className='grid grid-cols-2 gap-5 xl:gap-[77px] xl:mt-[57px] mt-[21px]'>
@@ -126,6 +130,7 @@ export default function AboutPage({}: Props) {
                 </div>
 
             </Description>
+            </div>
 
         </main>
     )
