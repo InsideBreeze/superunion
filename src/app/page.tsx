@@ -54,7 +54,6 @@ export default function Home() {
                         className='h-[60px] w-[60px]' />
                     <Image src="/images/search.png" alt="search" width={36} height={36}
                            className='cursor-pointer h-9 w-9 relative top-[50%] translate-y-[-50%] translate-x-[-48px]'
-
                     />
                 </div>
 
