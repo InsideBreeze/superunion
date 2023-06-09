@@ -18,7 +18,7 @@ export default function Header() {
                         superunion
                     </div>
                     {/* links */}
-                    <div className='space-x-[15px] xl:space-x-[40px] xl:text-xl text-[8px]'>
+                    <div className='space-x-[15px] xl:space-x-[40px] xl:text-xl text-[8px] md:text-[12px]'>
                         <Link href='/' className={`${pathname === '/' && 'active_link'}`} >
                             Our Service
                         </Link>

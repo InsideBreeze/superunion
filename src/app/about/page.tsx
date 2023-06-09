@@ -74,9 +74,9 @@ export default function AboutPage({}: Props) {
 
             <Description title='Contact us' className='font-semibold text-[12px] xl:text-[32px]'>
 
-                <div className='grid grid-cols-2 gap-5 xl:gap-[77px] xl:mt-[57px] mt-[21px]'>
+                <div className='flex gap-5 xl:gap-[77px] xl:mt-[57px] mt-[21px]'>
 
-                    <div className=' space-y-8 xl:space-y-[80px]'>
+                    <div className='w-[50%] space-y-8 xl:space-y-[80px]'>
                         { /* inputs */}
                         <input className='w-full h-[15px] xl:h-10 border border-[var(--blue)] outline-none xl:pl-5 pl-2 text-[6px] xl:text-[14px]' placeholder="Your name*" />
                         <input className='w-full h-[15px] xl:h-10 border border-[var(--blue)] outline-none xl:pl-5 pl-2 text-[6px] xl:text-[14px]' placeholder="Your email address" />
@@ -88,7 +88,7 @@ export default function AboutPage({}: Props) {
                             Submit
                         </button>
                     </div>
-                    <div className='text-[#333333]'>
+                    <div className='text-[#333333] w-[50%]'>
                         <p className='xl:pt-[5px] pt-[2px] text-[var(--blue)] xl:text-xl text-[8px]'>Send an email here to get free consulting and quote:</p>
                         <div className='flex xl:space-x-[15px] space-x-[6px] items-center mt-[9px] mb-3 xl:mt-[25px] xl:mb-[31px]'>
                             <Image src='/images/message.png' width={20} height={20} alt='message'
@@ -114,10 +114,10 @@ export default function AboutPage({}: Props) {
                             />
                             <p className='text-[6px] xl:text-[16px] text-[var(--blue)]'>Mobile scan code to add friends</p>
                         </div>
-                        <div className='inline-flex space-x-[9px] xl:space-x-6'>
-                            <Image src="/images/code0.png" alt='wechat code' height={950} width={1000} className='object-cover xl:w-[97px] xl:h-[133px] x-9 h-[50px]' />
+                        <div className='inline-flex space-x-[9px] xl:space-x-6 '>
+                            <Image src="/images/code0.png" alt='wechat code' height={950} width={1000} className='object-cover xl:w-[97px] xl:h-[133px] w-9 h-[50px]' />
                             <Image src="/images/code1.png" alt='wechat code' height={950} width={1000} className='object-cover
-                                        xl:w-[97px] xl:h-[133px] x-9 h-[50px]' />
+                                        xl:w-[97px] xl:h-[133px] w-9 h-[50px]' />
                             </div>
                         <p className='xl:text-[14px] text-[5px] py-[7px] lg:py-[19px]'>
                             Contact us：We are excited to hear from you!</p>
