@@ -16,6 +16,6 @@ html, body, :root {
 
 body {
   background-color: #d1d5db;
-  min-width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
