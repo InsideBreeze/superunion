@@ -67,7 +67,7 @@ const Rating = () => {
                 behavior: 'smooth', block: 'nearest',
                 inline: 'center'
             })} />
-        <Image src="/images/left_arrow.png" alt="right_arrow"
+        <Image src="/images/left_white_arrow.png" alt="right_arrow"
             className="absolute right-[136px] bottom-[44px] h-[42px] w-[42px] cursor-pointer shadow-xs" height={50} width={50}
             onClick={() => firstImageRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })}
         />
