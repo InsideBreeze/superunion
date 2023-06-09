@@ -12,7 +12,11 @@ export default function ImageDescription({ caption,  image, children }: Props) {
             <div className="xl:w-[343px] xl:h-[480px] w-[129px] h-[207px] shadow-md">
                 <div className="relative">
                     <Image src={image} alt='sea' height={420} width={500} className="xl:h-[254px] h-[95px] w-full object-cover" />
-                    <div className="flex items-center justify-center xl:text-[28px] text-[11px] text-white  absolute left-0 right-0 top-[67px] bottom-0 xl:top-[180px] bg-white bg-opacity-50">
+                    <div className="flex items-center justify-center
+                                    xl:text-[28px] text-[11px] text-white absolute left-0 right-0 top-[67px] bottom-0 xl:top-[180px]
+                                    bg-[#497bd0]
+                                    leading-[1em]
+                                    bg-opacity-50">
                     <p className='text-center'>{caption}</p>
                     </div>
                 </div>

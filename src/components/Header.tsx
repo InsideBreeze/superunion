@@ -10,7 +10,8 @@ export default function Header() {
     const pathname = usePathname()
 
     return (
-        <header className={twMerge('bg-[url("/images/bg.png")] bg-cover relative', pathname === '/' ? 'xl:h-[500px] h-[255px]' : 'h-[130px] xl:h-[350px]')}>
+        <header className={twMerge(' bg-cover relative', pathname === '/'
+                                 ? 'bg-[url("/images/bg@2.png")] xl:h-[500px] h-[255px]' : 'h-[130px] xl:h-[350px] bg-[url("/images/bg.png")]')}>
             <nav className='z-1 text-green h-[60px] xl:h-[109px] bg-white bg-opacity-50 px-[30px] py-[14px] xl:px-[130px] xl:py-[36px] text-[rgba(51,51,51,1)]'>
                 <div className='flex justify-between items-center'>
                     {/* icon */}
