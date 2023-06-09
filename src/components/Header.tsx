@@ -28,7 +28,7 @@ export default function Header() {
                         <Link href='/workflow' className={`${pathname === '/workflow' && 'active_link'}`}>
                             Workflow
                         </Link>
-                                                <Link href='/tracking' className={`${pathname === '/tracking' && 'active_link'}`}>
+                        <Link href='/tracking' className={`${pathname === '/tracking' && 'active_link'}`}>
                             Tracking
                         </Link>
 
@@ -36,7 +36,7 @@ export default function Header() {
                 </div>
             </nav>
             <div className={twMerge(
-                           'absolute left-[26px] top-[171px] xl:top-[350px] xl:left-[70px] font-bold xl:text-[34px] text-[13px] text-white'
+                'absolute left-[26px] top-[171px] xl:top-[350px] xl:left-[70px] font-bold xl:text-[34px] text-[13px] text-white'
                 , pathname === "/" ? 'block' : 'hidden')}>
                 <p>Your reliable shipping solution provider</p>
                 <p>Ship your business here!</p>
