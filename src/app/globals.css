@@ -9,13 +9,17 @@
 }
 
 
-html, body, :root {
+html, :root {
   --blue: #0052D9;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
   background-color: #d1d5db;
+  width: 1280px;
+  min-width: 1280px;
   max-width: 1280px;
-  margin: 0 auto;
 }
