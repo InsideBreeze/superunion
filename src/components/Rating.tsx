@@ -9,68 +9,83 @@ const Rating = () => {
     const firstImageRef = React.useRef<any>(null)
 
     return (<div className="mt-[33px] xl:mt-[89px] overflow-x-hidden ">
-        <Description title="Our Clients Satisfaction" className="text-[8px] xl:text-xl font-bold">
+        <Description title="Our Clients Satisfaction">
+            <div className="inline-flex flex-wrap ml-5 sm:ml-0 sm:flex-nowrap xl:gap-[48px] gap-[30px] :mt-8 mt-3 sm:gap-5">
+                <div className="sm:h-[268px] lg:pl-6 lg:pt-3 md:pl-4 md:pt-2 sm:pl-3 sm:pt-3 pt-2 pl-4
+                                xl:w-[534px] sm:w-[250px] w-[90%] lg:w-[456px] sm:w-[300px] shadow-xl md:w-[350px]" ref={firstImageRef}>
 
-            <div className="inline-flex xl:space-x-[48px] xl:mt-8 mt-3 space-x-[18px]">
-                <div className="xl:h-[268px] xl:w-[534px] w-[200px] h-[101px] shadow-xl" ref={firstImageRef}>
-                    <div className="xl:pl-[17px] xl:pr-[15px] xl:pt-[28px] pl-[6px] pr-[6px] pt-[14px]">
-                        <p className="xl:text-[16px] text-[5px] text-[#2F2F2F] leading-[2em]">
+                    <div className='flex flex-col justify-between h-full pb-2'>
+                        <p className="lg:text-base text-[#2F2F2F] sm:text-[14px]">
                             I am a new seller on Amazon and have spent a long time searching for a reliable and affordable logistics provider. My friend recommended Superunion to me and I am glad I took his advice. Their custom manager is very patient and answered my questions in details. I will definitely use Superunion to shipping cargo from now on.
                         </p>
-                        <div className="flex items-center xl:space-x-1 mt-2">
-                            <RxAvatar className="xl:h-9 xl:w-9 h-3" />
+                        <div className="flex items-center space-x-1 mt-2">
+                            <RxAvatar className="h-9 w-9 h-3" />
                             <div className="">
-                                <p className="text-[6px] xl:text-base">
+                                <p className="text-base">
                                     Archie David
                                 </p>
-                                <p className="text-[3px] xl:text-[6px]">⭐⭐⭐⭐⭐</p>
+                                <p className="text-[10px]">⭐⭐⭐⭐⭐</p>
                             </div>
                         </div>
                     </div>
+
                 </div>
-                <div className="xl:h-[268px] xl:w-[534px] w-[200px] h-[101px] shadow-xl">
-                    <div className="xl:pl-[17px] xl:pr-[15px] xl:pt-[28px] pl-[6px] pr-[6px] pt-[14px]">
-                        <p className="xl:text-[16px] text-[5px] text-[#2F2F2F] leading-[2em]">
+                <div className="
+                                xl:w-[534px] sm:w-[250px] w-[90%] lg:w-[456px] sm:w-[300px] shadow-xl md:w-[350px] lg:pt-3 md:pl-4 md:pt-2 sm:pl-3 sm:pt-3 pt-2 pl-4
+                                ">
+                    <div className='flex flex-col justify-between h-full pb-2'>
+
+                        <p className="lg:text-base text-[#2F2F2F] sm:text-sm ">
                             Superunion is the best. If there are any updates in the delivery, they will inform me right away. If I have any questions, they always respond quickly. My goods arrived into Amazon warehouse within estimated delivery time. I would highly recommend Superunion to my other friends.
                         </p>
-                        <div className="flex xl:mt-7 items-center xl:space-x-1 mt-4 space-x-[2px]">
-                            <RxAvatar className="xl:h-9 xl:w-9 h-3" />
-                            <div>
-                                <p className="text-[6px] xl:text-base">
+                        <div className="flex items-center space-x-1 mt-2">
+                            <RxAvatar className="h-9 w-9 h-3" />
+                            <div className="">
+                                <p className="text-base">
                                     Emily Nuckols
                                 </p>
-                                <p className="text-[3px] xl:text-[6px]">⭐⭐⭐⭐⭐</p>
+                                <p className="text-[10px]">⭐⭐⭐⭐⭐</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="xl:h-[268px] xl:w-[534px] w-[200px] h-[101px] shadow-md" ref={lastImageRef}>
-                    <div className="xl:pl-[17px] xl:pr-[15px] xl:pt-[28px] pl-[6px] pr-[6px] pt-[14px]">
-                        <p className="xl:text-[16px] text-[5px] text-[#2F2F2F] leading-[2em]">
-                            I have been working with Superunion for a year now and their service has always been excellent. Their prices are also competitive compared to other freight forwarder. I hope to have more cooperation in the future.
+                <div className="
+                                xl:w-[534px] md:w-[250px] lg:w-[456px] w-[90%] sm:w-[300px] shadow-xl md:w-[350px] lg:pt-3 md:pl-4 md:pt-2 sm:pl-3 sm:pt-3 pt-2 pl-4
+                                " ref={lastImageRef}>
+                                        <div className='flex flex-col justify-between h-full pb-2'>
+
+                        <p className="lg:text-base text-[#2F2F2F] sm:text-sm ">
+                            Superunion is the best. If there are any updates in the delivery, they will inform me right away. If I have any questions, they always respond quickly. My goods arrived into Amazon warehouse within estimated delivery time. I would highly recommend Superunion to my other friends.
                         </p>
-                        <div className="flex xl:mt-[60px] mt-[22px] items-center xl:space-x-1 space-x-[2px]">
-                            <RxAvatar className="xl:h-9 xl:w-9 h-4 w-4" />
-                            <div >
-                                <p className="text-[6px] xl:text-base">Felix Ortiz</p>
-                                <p className="xl:text-[6px] text-[3px]">⭐⭐⭐⭐⭐</p>
+                        <div className="flex items-center space-x-1">
+                            <RxAvatar className="h-9 w-9" />
+                            <div className="">
+                                <p className="text-base">
+                                    Emily Nuckols
+                                </p>
+                                <p className="text-[10px]">⭐⭐⭐⭐⭐</p>
                             </div>
                         </div>
-                    </div>
+                        </div>
+
                 </div>
+
             </div>
         </Description>
-        <Image src="/images/right_arrow.png" alt="right_arrow"
-            className="absolute right-[70px] bottom-[44px] h-[42px] w-[42px] cursor-pointer shadow-xs" height={50} width={50}
-            onClick={() => lastImageRef.current.scrollIntoView({
-                behavior: 'smooth', block: 'nearest',
-                inline: 'center'
-            })} />
-        <Image src="/images/left_white_arrow.png" alt="right_arrow"
-            className="absolute right-[136px] bottom-[44px] h-[42px] w-[42px] cursor-pointer shadow-xs" height={50} width={50}
-            onClick={() => firstImageRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })}
-        />
+        <div className='sm:flex absolute bottom-[10px] xl:bottom-[44px] xl:right-[70px] right-[10px] hidden'>
+            <Image src="/images/left_white_arrow.png" alt="right_arrow"
+                className="xl:h-[42px] xl:w-[42px] h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 cursor-pointer shadow-xs" height={50} width={50}
+                onClick={() => firstImageRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })}
+            />
+            <Image src="/images/right_arrow.png" alt="right_arrow"
+                className="xl:h-[42px] xl:w-[42px] h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 cursor-pointer shadow-xs" height={50} width={50}
+                onClick={() => lastImageRef.current.scrollIntoView({
+                    behavior: 'smooth', block: 'nearest',
+                    inline: 'center'
+                })} />
+
+        </div>
     </div>
     )
 };
