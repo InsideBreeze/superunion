@@ -27,7 +27,7 @@ export default function Workflow() {
                         </Work>
                     </div>
                     <div className='mt-[214px]'>
-                        <Work seq={6} contentImage="/images/inspection.png" imgH={108} imgW={108}>
+                        <Work seq={6} contentImage="/images/pick_cargo.png" imgH={78} imgW={86}>
                             Pick up cargo from the
                             supplier or purchasing
                             product for our clients.
