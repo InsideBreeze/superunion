@@ -12,7 +12,8 @@ export default function ImageDescription({ caption,  image, children }: Props) {
     return (
             <div className="shadow-xl
                               border
-                                                          transition-all hover:shadow-none hover:border-[#0052D9]
+                            hover:scale-[1.02]
+                                              duration-200            transition-all hover:border-[#0052D9]
 
                             ">
                 <div className="relative">
