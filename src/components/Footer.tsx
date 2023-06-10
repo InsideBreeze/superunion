@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer className="items-center bg-[rgba(49,108,206,0.86)] px-10 lg:h-[228px] h-[180px]  flex justify-between mt-auto">
             <div className="flex items- justify-center space-y-4 flex-col">
-                <Image src="/images/logo_white.png" alt="logo white" height={50} width={50} className='md:h-[60px] md:w-[260px] h-[50px] w-[200px]' />
+                <Image src="/images/logo.png" alt="logo white" height={500} width={500} className='md:h-[60px] md:w-[260px] h-[50px] w-[200px]' />
                 <p className='text-white text-sm'>
                     @2023-2024 Superunion Corp Limited Shenzhen China
                 </p>

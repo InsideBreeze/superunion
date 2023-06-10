@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Image from 'next/image'
 import Description from '@/components/Description'
+import Contact from '@/components/Contact'
 
 interface Props {
 
@@ -10,7 +11,7 @@ export default function AboutPage({}: Props) {
         <main className='bg-white'>
             <section className='flex flex-col items-center md:flex-row items-center md:items-start pl-[26px] pr-6 xl:pl-[70px] xl:pr-[95px] xl:pt-[67px] pt-[25px] xl:space-x-[62px] space-x-[23px]'>
                 <Image src='/images/about_us_person.png' alt='person' height={600} width={750}
-                    className='w-[80%] md:max-w-[495px] md:max-h-[600px] bg-cover flex-1'
+                    className='w-[80%] md:max-w-[495px] md:max-h-[550px] bg-cover flex-1'
                 />
                 <div className='w-[100%] md:w-[50%] flex-1'>
                     <h3 className='text-center text-[8px] font-bold text-[var(--blue)] md:text-xl'>About us</h3>
@@ -75,19 +76,7 @@ export default function AboutPage({}: Props) {
                 <Description title='Contact us' className='font-semibold text-[12px] xl:text-[32px]'>
 
                     <div className='flex gap-5 xl:gap-[77px] xl:mt-[57px] mt-[21px]'>
-
-                        <div className='w-[50%] space-y-8 xl:space-y-[80px]'>
-                            { /* inputs */}
-                            <input className='w-full h-[15px] xl:h-10 border border-[var(--blue)] outline-none xl:pl-5 pl-2 text-[6px] xl:text-[14px]' placeholder="Your name*" />
-                            <input className='w-full h-[15px] xl:h-10 border border-[var(--blue)] outline-none xl:pl-5 pl-2 text-[6px] xl:text-[14px]' placeholder="Your email address" />
-                            <input className='w-full h-[15px] xl:h-10 border border-[var(--blue)] outline-none xl:pl-5 pl-2 text-[6px] xl:text-[14px]' placeholder="Your phone number" />
-
-                            <textarea placeholder='Your message here' className='xl:pl-5 xl:pt-5 pt-2 pl-2 text-[6px] xl:text-[14px] w-full outline-none border border-[var(--blue)] xl:min-h-[218px] xl:max-h-[218px] min-h-[80px] max-h-[80px]' />
-
-                            <button className='w-full h-6 xl:h-[60px] bg-[var(--blue)] text-white xl:text-xl text-[9px]'>
-                                Submit
-                            </button>
-                        </div>
+                        <Contact />
                         <div className='text-[#333333] w-[50%]'>
                             <p className='xl:pt-[5px] pt-[2px] text-[var(--blue)] xl:text-xl text-[8px]'>Send an email here to get free consulting and quote:</p>
                             <div className='flex xl:space-x-[15px] space-x-[6px] items-center mt-[9px] mb-3 xl:mt-[25px] xl:mb-[31px]'>

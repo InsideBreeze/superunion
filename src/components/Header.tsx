@@ -11,7 +11,7 @@ export default function Header() {
     const pathname = usePathname()
     return (
         <header className={twMerge(' bg-cover relative', pathname === '/'
-                                 ? 'bg-[url("/images/bg@2.png")] xl:h-[500px] h-[255px]' : 'h-[230px] lg:h-[350px] bg-[url("/images/bg.png")]')}>
+                                 ? 'bg-[url("/images/bg@2.png")] xl:h-[650px] h-[255px]' : 'h-[230px] lg:h-[350px] bg-[url("/images/bg.png")]')}>
             <nav className='flex items-center justify-between text-[#333333]
                             h-[60px] xl:h-[120px] bg-white bg-opacity-50 sm:px-[30px] sm:py-[14px] px-[10px] py-2 xl:px-[130px] xl:py-[36px]
                             '>
@@ -36,7 +36,7 @@ export default function Header() {
                     </div>
             </nav>
             <div className={twMerge(
-                'absolute left-[26px] top-[171px] xl:top-[350px] xl:left-[70px] font-bold lg:text-3xl md:text-2xl sm:text-xl xl:text-4xl text-base text-white'
+                'absolute left-[26px] top-[171px] xl:top-[500px] xl:left-[70px] font-bold lg:text-3xl md:text-2xl sm:text-xl xl:text-4xl text-base text-white'
                 , pathname === "/" ? 'block' : 'hidden')}>
                 <p>Your reliable shipping solution provider</p>
                 <p>Ship your business here!</p>

@@ -19,14 +19,15 @@ export default function Workflow() {
             <div className='flex px-[130px] w-full pb-[57px]'>
                 <div className='flex flex-col items-center'>
                     <div>
-                        <Work seq={1} contentImage="/images/cargo.png" arrowImage='/images/long_right_arrow.png'>
+                        <Work seq={1} contentImage="/images/cargo.png" imgH={108} imgW={108}
+                        >
                             Pick up cargo from the
                             supplier or purchasing
                             product for our clients.
                         </Work>
                     </div>
                     <div className='mt-[214px]'>
-                        <Work seq={6} contentImage="/images/inspection.png" arrowImage='/images/long_right_arrow.png'>
+                        <Work seq={6} contentImage="/images/inspection.png" imgH={108} imgW={108}>
                             Pick up cargo from the
                             supplier or purchasing
                             product for our clients.
@@ -38,12 +39,12 @@ export default function Workflow() {
                     <Image alt='down arrow' className='mt-[39px] h-[138.26px] w-[16px]' src='/images/down_arrow.png' width={100} height={150} />
 
                     <div className='mt-[42px]'>
-                        <Work seq={7} contentImage="/images/boat.png" arrowImage='/images/long_right_arrow.png'>
+                        <Work seq={7} contentImage="/images/boat.png" imgH={90} imgW={80}>
                             Shipping by sea or by air
                         </Work>
                     </div>
                     <div className='mt-[244px]'>
-                        <Work seq={12} contentImage="/images/track.png" arrowImage='/images/long_right_arrow.png'>
+                        <Work seq={12} contentImage="/images/track.png" imgH={75} imgW={100}>
                             Dispatch the cargo by truck or by carrier
                         </Work>
                     </div>
@@ -73,12 +74,12 @@ export default function Workflow() {
                 {/* colum3 */}
                 <div className='flex flex-col items-center'>
                     <div>
-                        <Work seq={2} contentImage="/images/inspection.png" arrowImage='/images/long_right_arrow.png'>
+                        <Work seq={2} contentImage="/images/inspection.png" imgH={98.24} imgW={87.75}>
                             Inspection (if need)
                         </Work>
                     </div>
                     <div className='mt-[214px]'>
-                        <Work seq={5} contentImage="/images/loading_cargo.png" arrowImage='/images/long_right_arrow.png'>
+                        <Work seq={5} contentImage="/images/loading_cargo.png" imgH={82} imgW={101}>
                             Loading the cargo
                         </Work>
                     </div>
@@ -88,12 +89,12 @@ export default function Workflow() {
                     <Image alt='down arrow' className='opacity-0 mt-[39px] h-[138.26px] w-[16px]' src='/images/down_arrow.png' width={100} height={150} />
 
                     <div className='mt-[42px]'>
-                        <Work seq={8} contentImage="/images/destination.png" arrowImage='/images/long_right_arrow.png'>
+                        <Work seq={8} contentImage="/images/destination.png" imgH={82} imgW={92}>
                             Arriving at the destination port
                         </Work>
                     </div>
                     <div className='mt-[244px]'>
-                        <Work seq={12} contentImage="/images/clock.png" arrowImage='/images/long_right_arrow.png'>
+                        <Work seq={12} contentImage="/images/clock.png" imgH={80} imgW={80}>
                             Make an appointment
                         </Work>
                     </div>
@@ -122,7 +123,7 @@ export default function Workflow() {
 
                                     <div className='flex flex-col items-center'>
                     <div>
-                        <Work seq={3} contentImage="/images/warehouse.png" arrowImage='/images/long_right_arrow.png'>
+                        <Work seq={3} contentImage="/images/warehouse.png" imgH={93} imgW={93}>
                             Warehouse receiving
                         </Work>
                     </div>
@@ -130,7 +131,7 @@ export default function Workflow() {
                     <Image alt='down arrow' className='mt-[39px] h-[138.26px] w-[16px]' src='/images/down_arrow.png' width={100} height={150} />
 
                     <div className='mt-[42px]'>
-                        <Work seq={4} contentImage="/images/barcode.png" arrowImage='/images/long_right_arrow.png'>
+                        <Work seq={4} contentImage="/images/barcode.png" imgH={81} imgW={112}>
                             Adding barcode, FBA label and packaging (if need)
                         </Work>
                     </div>
@@ -141,14 +142,14 @@ export default function Workflow() {
     <Image alt='down arrow' className='opacity-0 mt-[39px] h-[138.26px] w-[16px]' src='/images/down_arrow.png' width={100} height={150} />
 
                     <div className='mt-[42px]'>
-                        <Work seq={9} contentImage="/images/clear.png" arrowImage='/images/long_right_arrow.png'>
+                        <Work seq={9} contentImage="/images/clear.png" imgH={91} imgW={91}>
                             Customs clearance
                         </Work>
                     </div>
                     <Image alt='down arrow' className=' mt-[39px] h-[138.26px] w-[16px]' src='/images/down_arrow.png' width={100} height={150} />
 
                     <div className='mt-[60px]'>
-                        <Work seq={10} contentImage="/images/uploading.png" arrowImage='/images/long_right_arrow.png'>
+                        <Work seq={10} contentImage="/images/uploading.png" imgW={85} imgH={97}>
                             Unloading the cargo
                         </Work>
                     </div>
