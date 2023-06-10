@@ -31,11 +31,11 @@ border-l border-l-[var(--blue)]
                                                             border-b  border-b-[var(--blue)]
 border-t  border-t-[var(--blue)]
 border-l border-l-[var(--blue)]
-                                text-[#666666]
                             border-r border-r-[var(--blue)]
 
                             '>
-                <div className='pl-[21px] w-[40%] text-start flex items-center'>
+                <div className='pl-[21px] w-[40%] text-start flex items-center                                 text-[#666666]
+'>
                     Your email*
                 </div>
                 <input className='w-[60%] outline-none  ' />
@@ -45,11 +45,13 @@ border-l border-l-[var(--blue)]
 border-t  border-t-[var(--blue)]
 border-l border-l-[var(--blue)]
                             border-r border-r-[var(--blue)]
-                                text-[#666666]
+
 
 
                             '>
-                <div className='pl-[21px] w-[40%] text-start flex items-center'>
+                <div className='pl-[21px] w-[40%] text-start flex items-center
+                                                text-[#666666]
+                                '>
                     Your phone number*
                 </div>
                 <input className='w-[60%] outline-none  ' />
@@ -59,12 +61,14 @@ border-l border-l-[var(--blue)]
                                                             border-b  border-b-[var(--blue)]
 border-t  border-t-[var(--blue)]
 border-l border-l-[var(--blue)]
-                                text-[#666666]
                             border-r border-r-[var(--blue)]
 
 
                             '>
-                <div className='pl-[21px] w-[40%] text-start flex items-center'>
+                <div className='pl-[21px] w-[40%] text-start flex items-center
+                                                                text-[#666666]
+
+                                '>
                     Your country*
                 </div>
                 <input className='w-[60%] outline-none ' />
