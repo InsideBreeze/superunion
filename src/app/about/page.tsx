@@ -38,7 +38,7 @@ export default function AboutPage({}: Props) {
                 <Description title='Why Choose US' className='text-xl'>
                     <div className='grid grid-cols-3 gap-14 mt-[21px]'>
                         <div className=
-                            'border h-[400px] flex flex-col items-center pt-[43px] space-y-[30px]'
+                            'border h-[400px] flex hover:border-[#0052D9] flex-col items-center pt-[43px] space-y-[30px]'
                         >
                             <Image src='/images/one_stop.png' alt='one stop' width={80} height={60}
                                 className='h-[60px] w-[60px]' />
@@ -53,7 +53,7 @@ export default function AboutPage({}: Props) {
                         </div>
 
                         <div className=
-                            'border h-[400px] flex flex-col items-center pt-[43px] space-y-[30px]'
+                            'border hover:border-[#0052D9] h-[400px] flex flex-col items-center pt-[43px] space-y-[30px]'
                         >
                             <Image src='/images/high_quality.png' alt='one stop' width={80} height={60}
                                 className='h-[60px] w-[60px]' />
@@ -64,7 +64,7 @@ export default function AboutPage({}: Props) {
                                 We will assign you a personal advisor who will communicate with you anytime to keep you updated on the progress of your cargo and answer any questions you may have.
                             </p>
                         </div>
-                        <div className='border h-[400px] flex flex-col items-center pt-[43px] space-y-[30px]'>
+                        <div className='border hover:border-[#0052D9] h-[400px] flex flex-col items-center pt-[43px] space-y-[30px]'>
                             <Image src='/images/hidden.png' alt='no hidden' width={80} height={60}
                                 className='h-[60px] w-[60px]' />
                             <button className='w-[200px] h-[40px] text-[18px] bg-[#0052D9] text-white outline-none'>
