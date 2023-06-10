@@ -7,7 +7,6 @@ interface Props {
     children: React.ReactNode
 }
 
-//                px-[5px] pt-3 leading- TRACKINGh-[0.1em] xl:tracking-[0.02em] xl:text-[13px] xl:px-[13px] xl:pt-8 ">
 
 export default function ImageDescription({ caption,  image, children }: Props) {
     return (
@@ -20,10 +19,10 @@ export default function ImageDescription({ caption,  image, children }: Props) {
                                     leading-[1em]
                                     bg-opacity-50
                                     ">
-                    <p className='text-center lg:text-3xl md:text-2xl text-xl lg:leading-[1em]'>{caption}</p>
+                    <p className='text-center text-3xl leading-[1em]'>{caption}</p>
                     </div>
                 </div>
-                <p className="text-[#2F2F2F] my-8 xl:text-lg mx-4 lg:text-[17px] md:text-sm text-lg">
+                <p className="text-[#2F2F2F] my-8 mx-4 text-lg">
                     {children}
                 </p>
                 <div>

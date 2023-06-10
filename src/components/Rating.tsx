@@ -11,7 +11,7 @@ const Rating = () => {
     return (<div className="mt-[89px] overflow-x-hidden ">
         <Description title="Our Clients Satisfaction">
             <div className="inline-flex gap-[48px] mt-3">
-                <div className="px-6 py-5
+                <div className="border px-6 py-5
                                 w-[456px]    shadow-xl
                                 hover:border hover:border-[var(--blue)] rounded-md
                                 transition-all
@@ -37,7 +37,7 @@ const Rating = () => {
                     </div>
 
                 </div>
-                <div className="
+                <div className="border
                                 w-[456px] shadow-xl py-5 px-6
                                                                 hover:border hover:border-[var(--blue)] rounded-md
                                 transition-all
@@ -63,7 +63,7 @@ const Rating = () => {
                     </div>
                 </div>
 
-                <div className="
+                <div className="border
                                 w-[456px] shadow-xl py-5 px-6
                                                                 hover:border hover:border-[var(--blue)] rounded-md
                                 transition-all
@@ -92,7 +92,7 @@ const Rating = () => {
 
             </div>
         </Description>
-        <div className='flex absolute xl:bottom-[44px] right-[70px]'>
+        <div className='flex absolute bottom-[44px] right-[70px]'>
             <Image src="/images/left_white_arrow.png" alt="right_arrow"
                 className="h-[42px] w-[42px] cursor-pointer shadow-xs" height={50} width={50}
                 onClick={() => firstImageRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })}

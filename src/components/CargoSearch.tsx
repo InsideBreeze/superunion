@@ -7,10 +7,10 @@ interface Props {
 export default function CargoSearch({}: Props) {
     return (
         <>
-            <p className="text-[#0052D9] xl:text-[25px] xl:mt-[84px] xl:mb-[15px]">Cargo Tracking</p>
+            <p className="text-[#0052D9] text-[25px] mt-[84px] mb-[15px]">Cargo Tracking</p>
             <div className='flex relative'>
-                <input className="xl:w-[480px] xl:h-[60px]  bg-transparent
- border-[var(--blue)] border-[2px] outline-none xl:text-xl xl:pl-[14px] placeholder:text-[#646464]"
+                <input className="w-[480px] h-[60px]  bg-transparent
+ border-[var(--blue)] border-[2px] outline-none text-xl pl-[14px] placeholder:text-[#646464]"
                     placeholder='Search'
         />
                 <Image src="/images/rec.png" width={60} height={60} alt='rec'

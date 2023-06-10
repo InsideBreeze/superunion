@@ -17,7 +17,7 @@ export default function Header() {
                             '>
                     {/* icon */}
                     <div>
-                        <Image src='/images/logo_blue.png' alt="logo" width={200} height={40} className="md:w-[180px] md:h-10" />
+                        <Image src='/images/logo_blue.png' alt="logo" width={200} height={40} className="w-[180px] h-10" />
                     </div>
                     {/* links */}
                     <div className='whitespace-nowrap space-x-[40px] text-xl'>

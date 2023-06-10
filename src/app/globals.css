@@ -12,9 +12,6 @@
 html, :root {
   --blue: #0052D9;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 body {
@@ -22,4 +19,5 @@ body {
   width: 1280px;
   min-width: 1280px;
   max-width: 1280px;
+  margin: 0 auto;
 }
