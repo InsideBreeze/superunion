@@ -15,7 +15,7 @@ const Work = ({ seq = 1, contentImage = "/images/cargo.png", imgW, imgH, childre
         <div className="relative flex pb-[111px] border-b border-b-[var(--blue)] index-100">
             <div className=' items-center justify-start'>
                 <p className='text-center text-[var(--blue)] text-[40px]'>{seq}</p>
-                <div className='grid place-items-center w-[200px] h-[155px] bg-white shadow-xl '>
+                <div className='flex items-center justify-center w-[200px] h-[155px] bg-white shadow-xl '>
                     <Image src={contentImage} alt='workflow' width={108} height={108} className={`object-cover w-[${imgW}px] h-[${imgH}px]`} />
                 </div>
                 <p className='absolute bottom-[10px] w-[187px] text-[16px] text-[#333333] pt-[22px] text-center'>
