@@ -11,7 +11,7 @@ interface Props {
 
 export default function ImageDescription({ caption,  image, children }: Props) {
     return (
-            <div className="shadow-xl">
+            <div className="shadow-xl hover:border-[2px] transition-all hover:shadow-none hover:border-[var(--blue)]">
                 <div className="relative">
                     <Image src={image} alt='sea' height={420} width={500} className="max-h-[254px] w-full object-cover" />
                     <div className="flex items-center justify-center
