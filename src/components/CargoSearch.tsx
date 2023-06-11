@@ -4,8 +4,16 @@ import Image from 'next/image'
 import { motion, AnimatePresence } from "framer-motion";
 import Description from './Description';
 
+interface Result {
+    "shipment-id": string;
+    "client-reference": string;
+    "statue": string;
+    "costcode": string;
+    "postcode": string;
 
-const result = {
+}
+
+const result: Result = {
     "shipment-id": 'CJ000840',
     "client-reference": "FBA15DG42YYW",
     "statue": "in-transit",
@@ -112,7 +120,7 @@ export default function CargoSearch({}: Props) {
 
                                         </div>
                                         <div className='h-full w-[857px] grid place-items-center text-[#333333] text-2xl'>
-                                            {result[key]}
+                                            {result[key as keyof Result]}
                                         </div>
                                     </div>
                                 ))
