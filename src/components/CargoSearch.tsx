@@ -52,7 +52,9 @@ export default function CargoSearch({}: Props) {
 
                                 {
                                     codes.map(code => (
-                                        <div key={code} className='bg-[#E2E2E2] px-[9px] py-[5px] flex items-center space-x-1'>
+                                        <div key={code} className='bg-[#E2E2E2] px-[9px] py-[5px] flex items-center space-x-1 cursor-pointer'
+                                            onClick={() => setCode(code)}
+                                        >
                                 <p>{code}</p>
                                 <div className='h-4 w-4  rounded-full bg-[#646464] flex items-center justify-center hover:cursor-pointer'
                                                 onClick={() => setCodes(codes.filter(c  => c !== code))}
