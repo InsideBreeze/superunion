@@ -9,7 +9,7 @@ export interface ShipmentData {
 
 export interface Trace {
   time: string
-  description: string
+  info: string
   station: string
 }
 

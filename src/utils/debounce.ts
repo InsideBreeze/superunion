@@ -1,4 +1,7 @@
-export default function debounce<T extends (...args: any[]) => void>(callback: T, delay: number) {
+export default function debounce<T extends (...args: any[]) => void>(
+  callback: T,
+  delay: number
+) {
   let timeoutId: ReturnType<typeof setTimeout> | undefined
 
   return ((...args) => {

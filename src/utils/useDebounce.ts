@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react'
 import debounce from '../utils/debounce'
 
 export default function useDebounce(callback: (...args: any[]) => void) {
