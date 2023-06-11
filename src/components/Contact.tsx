@@ -34,7 +34,7 @@ export default function Contact() {
     })
   }
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const params = new URLSearchParams()
     params.append('name', formFileds.name)
@@ -44,8 +44,6 @@ export default function Contact() {
     params.append('message', formFileds.message)
 
     //send request
-    //
-
     axios
       .post('http://api.superunionlogistics.com:8000/sendmail', params, {
         headers: {
@@ -54,7 +52,6 @@ export default function Contact() {
       })
       .then((response) => {
         console.log(response.data)
-        console.log('success')
         setIsOpen(true)
         setFormFileds(initialFields)
       })

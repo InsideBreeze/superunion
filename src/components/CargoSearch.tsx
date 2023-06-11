@@ -1,16 +1,10 @@
 'use client'
-import * as React from 'react'
-import Image from 'next/image'
-import { motion, AnimatePresence } from 'framer-motion'
-import { ShipmentData, Status, Trace } from '@/types'
-import CargoTrackingResult from './CargoTrackingResult'
+import { Status, Trace } from '@/types'
 import axios from 'axios'
-
-const parseData = (data: ShipmentData): [t: Trace[], la: Status] => {
-  const { traces, shipment_id, client_reference, status, country, postcode } =
-    data
-  return [traces, { shipment_id, client_reference, status, country, postcode }]
-}
+import { AnimatePresence, motion } from 'framer-motion'
+import Image from 'next/image'
+import * as React from 'react'
+import CargoTrackingResult from './CargoTrackingResult'
 
 export default function CargoSearch() {
   const [history, setHistory] = React.useState<string[]>([])
@@ -32,7 +26,6 @@ export default function CargoSearch() {
     const cargo = localStorage.getItem('cargo')
     if (cargo) {
       const data = JSON.parse(cargo) as string[]
-      console.log('lala data', data.slice(0, 3))
       setHistory(data.slice(0, 3))
     }
   }, [])
@@ -53,15 +46,12 @@ export default function CargoSearch() {
     const res = response.data
 
     if (res.code === 200) {
-      const data = res.data
-      console.log(data)
       if (!history.includes(code)) {
         setHistory([code, ...history])
         localStorage.setItem('cargo', JSON.stringify([code, ...history]))
       }
       const { traces, ...parcelData } = res.data
       setTraces(traces)
-
       setParcelData(parcelData)
       setCode('')
     } else {
@@ -70,7 +60,6 @@ export default function CargoSearch() {
     }
   }
 
-  console.log('isFocus', isFocus)
   return (
     <div className="bg-white pb-[966px]">
       <div className="relative flex flex-col items-center">
@@ -89,11 +78,7 @@ export default function CargoSearch() {
               onFocus={() => setIsFoucs(true)}
               onBlur={() => setIsFoucs(false)}
             />
-            <button
-              onClick={handleSearch}
-              disabled={code.trim().length === 0}
-              className="bg-[red]"
-            >
+            <button onClick={handleSearch} disabled={code.trim().length === 0}>
               <Image
                 src="/images/rec.png"
                 width={60}
