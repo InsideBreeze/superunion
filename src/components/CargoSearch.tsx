@@ -10,7 +10,6 @@ interface Props {
 export default function CargoSearch({}: Props) {
     const [codes, setCodes] = React.useState(['CJ000840', 'CJ000841', 'CJ000842'])
     const [code, setCode] = React.useState('')
-    const [isActive, setIsActive] = React.useState(false)
     const inputRef = React.useRef<any>(null)
 
 
@@ -31,8 +30,6 @@ export default function CargoSearch({}: Props) {
                     value={code}
                     onChange={(e) => setCode(e.target.value)}
                     placeholder='Search'
-                    onFocus={() => setIsActive(true)}
-                    onBlur={() => setIsActive(false)}
                 />
                 <button onClick={() => console.log('button')}>
                     <Image src="/images/rec.png" width={60} height={60} alt='rec'
@@ -50,7 +47,7 @@ export default function CargoSearch({}: Props) {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                     >
-                        <p>History</p>
+                            <p className='text-[#2F2F2F]'>History</p>
                         <div className='flex space-x-5 text-[#646464] mt-[10px]'>
 
                                 {
@@ -90,7 +87,7 @@ export default function CargoSearch({}: Props) {
             }
         </AnimatePresence>
         {
-            codes.length === 0 && (
+            code.length === 0 && (
                 <>
                     <p className='mt-[73px] mb-[46px] text-[var(--blue)] text-xl'>Welcome use cargo tracing,Please input your tracking number.</p>
             <Image src="/images/cargo_search.png" width={800} height={800} className='h-[319.29px] w-[315.24px]' alt='search'/>
