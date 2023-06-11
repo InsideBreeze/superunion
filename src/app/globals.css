@@ -4,13 +4,13 @@
 
 @layer components {
   .active_link {
-    @apply font-bold text-[#163BA5]  border-b-[#163BA5] border-b-[2px]
+    @apply border-b-[2px] border-b-[#163BA5]  font-bold text-[#163BA5];
   }
 }
 
-
-html, :root {
-  --blue: #0052D9;
+html,
+:root {
+  --blue: #0052d9;
   min-height: 100vh;
 }
 
@@ -21,4 +21,3 @@ body {
   max-width: 1280px;
   margin: 0 auto;
 }
-

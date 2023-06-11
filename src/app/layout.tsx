@@ -20,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={twMerge(inter.className, 'flex flex-col')}>
-              <Header />
+        <Header />
         {children}
-              <Footer />
+        <Footer />
       </body>
     </html>
   )

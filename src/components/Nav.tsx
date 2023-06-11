@@ -1,9 +1,7 @@
 'use client'
 import * as React from 'react'
 
-interface Props {
-
-}
+interface Props {}
 export default function Nav({}: Props) {
-    return <div>Hello</div>
+  return <div>Hello</div>
 }
