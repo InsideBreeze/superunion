@@ -21,7 +21,7 @@ const result: Result = {
     "postcode": "252-5220"
 }
 
-export default function CargoSearch({}: Props) {
+export default function CargoSearch() {
     const [codes, setCodes] = React.useState(['CJ000840', 'CJ000841', 'CJ000842'])
     const [code, setCode] = React.useState('')
     const inputRef = React.useRef<any>(null)
