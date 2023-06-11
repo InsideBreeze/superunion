@@ -9,10 +9,6 @@ export default function TrackingPage({}: Props) {
     return (
         <div className="flex flex-col items-center bg-white pb-[966px]">
             <CargoSearch />
-
-            <p className='mt-[73px] mb-[46px] text-[var(--blue)] text-xl'>Welcome use cargo tracing,Please input your tracking number.</p>
-
-            <Image src="/images/cargo_search.png" width={800} height={800} className='h-[319.29px] w-[315.24px]' alt='search'/>
             {/* <div className='h-[96px] bg-gray-100 w-full'/> */}
 
         </div>
