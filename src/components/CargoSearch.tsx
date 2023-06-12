@@ -61,7 +61,7 @@ export default function CargoSearch() {
   }
 
   return (
-    <div className="bg-white pb-[966px]">
+    <div className="bg-white pb-[200px]">
       <div className="relative flex flex-col items-center">
         <p className="mb-[15px] mt-[84px] text-[25px] text-[#0052D9]">
           Cargo Tracking
@@ -147,7 +147,7 @@ export default function CargoSearch() {
           </AnimatePresence>
         </div>
         {code.length === 0 && !parcelData && !notFound && (
-          <>
+          <div className="mb-[200px]">
             <Image
               src="/images/cargo_search.png"
               width={800}
@@ -155,14 +155,14 @@ export default function CargoSearch() {
               className="mt-[73px] h-[319.29px] w-[315.24px]"
               alt="search"
             />
-          </>
+          </div>
         )}
       </div>
       {parcelData && !notFound && (
         <CargoTrackingResult parcelData={parcelData} traces={traces} />
       )}
       {notFound && (
-        <p className="mt-[150px] text-center text-2xl text-[red]">
+        <p className="mt-[150px] text-center text-2xl text-[red] pb-[200px]">
           Not Found, please check your input :){' '}
         </p>
       )}

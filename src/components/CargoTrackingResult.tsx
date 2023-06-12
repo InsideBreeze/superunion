@@ -8,9 +8,8 @@ interface Props {
   traces: Trace[]
 }
 export default function CargoTrackingResult({ parcelData, traces }: Props) {
-  console.log('lemon traces', traces)
   return (
-    <div className="mt-[152px]">
+    <div className="mt-[152px] mb-[200px]">
       <Description title="Result">
         <div className="mt-[28px] space-y-8">
           {parcelData &&

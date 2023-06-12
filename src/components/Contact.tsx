@@ -179,7 +179,7 @@ border-b-[var(--blue)] border-l-[var(--blue)]
       <AlertDialog.Root open={isOpen}>
         <AlertDialog.Trigger />
         <AlertDialog.Portal className="bg-[red]">
-          <AlertDialog.Overlay className="fixed inset-0 bg-black bg-opacity-10" />
+                  {/* <AlertDialog.Overlay className="" /> */}
           <AlertDialog.Content className=" fixed left-[50%] top-[10%] max-h-[85vh] w-[90vw] max-w-[500px] translate-x-[-50%]  rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px]">
             <div className="text-center text-xl">
               <p>
