@@ -14,6 +14,7 @@ export default function CargoSearch() {
   const [traces, setTraces] = React.useState<Trace[]>([])
   const [parcelData, setParcelData] = React.useState<Status | null>(null)
   const [notFound, setNotFound] = React.useState(false)
+  const [showImage, setShowImage] = React.useState(true)
 
   const [isFocus, setIsFoucs] = React.useState(false)
 
@@ -27,7 +28,7 @@ export default function CargoSearch() {
     const cargo = localStorage.getItem('cargo')
     if (cargo) {
       const data = JSON.parse(cargo) as string[]
-      setHistory(data.slice(0, 3))
+      setHistory(data.slice(0, 6))
     }
   }, [])
 
@@ -37,6 +38,7 @@ export default function CargoSearch() {
   const handleSearch = async (code: string) => {
     // here should request the data
     //
+    try {
     const response = await axios.post(
       `https://www.superunionlogistics.com/api/tracking`,
       `tracking_number=${code}`,
@@ -59,12 +61,18 @@ export default function CargoSearch() {
       setParcelData(parcelData)
       setCode('')
       setNotFound(false)
+      setShowImage(false)
     } else {
       setNotFound(true)
       inputRef.current.focus()
+      setShowImage(false)
+    }
+    } catch (error: any) {
+      console.log(error)
     }
   }
 
+  console.log(notFound, 'notFound')
   return (
     <div className="bg-white">
       <div className="relative flex flex-col items-center">
@@ -78,7 +86,7 @@ export default function CargoSearch() {
  border-[var(--blue)] bg-transparent pl-[14px] text-xl outline-none placeholder:text-[#646464]"
               ref={inputRef}
               value={code}
-              onChange={(e) => setCode(e.target.value)}
+                          onChange={(e) => setCode(e.target.value.toUpperCase())}
               placeholder="Search"
               onFocus={() => setIsFoucs(true)}
               onBlur={() => setIsFoucs(false)}
@@ -154,7 +162,7 @@ export default function CargoSearch() {
             )}
           </AnimatePresence>
         </div>
-        {!parcelData && (
+        {showImage && (
           <div className="mb-[200px]">
             <Image
               src="/images/cargo_search.png"

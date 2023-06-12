@@ -7,9 +7,9 @@ interface Props {
   className?: string
 }
 
-export default function Description({ title, children, className }: Props) {
+export default function Description({ title, children }: Props) {
   return (
-    <section className={twMerge("px-[70px]", className)}>
+    <section className={twMerge("px-[70px]")}>
       <p
         className={twMerge(
           'border-l border-l-[5px] border-l-[var(--blue)] pl-[9px] text-2xl font-bold text-[var(--blue)]'

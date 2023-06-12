@@ -44,7 +44,6 @@ export default function Home() {
         <div className="mt-[104px]">
           <Description
             title="Value Added service"
-            className="text-xl font-bold"
           >
             <div
               className="mt-[24px] grid grid-cols-3
@@ -82,33 +81,6 @@ export default function Home() {
           </Description>
         </div>
         <Rating />
-      </div>
-      <div className="flex h-[246px] flex-col items-center space-y-[15px] border bg-gray-100">
-        <p className="mt-[96px] text-[25px] text-[#0052D9]">Cargo Tracking</p>
-        <div className="relative flex">
-          <div
-            className="relative flex h-[60px] w-[480px] items-center justify-center
-                                    border-[2px] border-[var(--blue)] bg-white"
-          >
-            <p className="text-[24px] text-[var(--blue)]">
-              https://www.google.com.hk
-            </p>
-          </div>
-          <Image
-            src="/images/rec.png"
-            width={60}
-            height={60}
-            alt="rec"
-            className="h-[60px] w-[60px]"
-          />
-          <Image
-            src="/images/search.png"
-            alt="search"
-            width={36}
-            height={36}
-            className="relative top-[50%] h-9 w-9 translate-x-[-48px] translate-y-[-50%] cursor-pointer"
-          />
-        </div>
       </div>
     </main>
   )

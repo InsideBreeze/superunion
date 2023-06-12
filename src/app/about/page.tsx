@@ -123,11 +123,11 @@ export default function AboutPage({}: Props) {
 
       {/* contact */}
       <div className="mt-[120px] pb-[50px]">
-        <Description title="Contact us" className="text-[32px] font-semibold">
+        <Description title="Contact us" className="">
           <div className="mt-[57px] flex gap-[77px]">
             <Contact />
             <div className="w-[50%] text-[#333333]">
-              <p className="pt-[text-[var(--blue)] text-xl">
+              <p className="text-[var(--blue)] text-xl">
                 Send an email here to get free consulting and quote:
               </p>
               <div className="mb-[31px] mt-[25px] flex items-center space-x-[15px]">
