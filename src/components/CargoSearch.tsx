@@ -32,7 +32,6 @@ export default function CargoSearch() {
     }
   }, [])
 
-  console.log(parcelData, 'data')
 
   /// send request
   const handleSearch = async (code: string) => {

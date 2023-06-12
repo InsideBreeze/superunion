@@ -39,8 +39,7 @@ export default function Header() {
             Our Service
           </Link>
           </div>
-                            <div className='w-[120px] text-center'>
-
+                            <div className='w-[90px] text-center'>
           <Link
             href="/about"
             className={`${pathname === '/about' && 'active_link'}`}
@@ -48,7 +47,7 @@ export default function Header() {
             About us
           </Link>
           </div>
-                            <div className='w-[120px] text-center'>
+                            <div className='w-[90px] text-center'>
 
           <Link
             href="/workflow"
@@ -57,7 +56,7 @@ export default function Header() {
             Workflow
           </Link>
           </div>
-                            <div className='w-[120px] text-center'>
+                            <div className='w-[90px] text-center'>
 
           <Link
             href="/tracking"
