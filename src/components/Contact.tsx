@@ -45,7 +45,7 @@ export default function Contact() {
 
     //send request
     axios
-      .post('http://api.superunionlogistics.com:8000/sendmail', params, {
+      .post('https://www.superunionlogistics.com/api/sendmail', params, {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },

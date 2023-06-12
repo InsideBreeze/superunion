@@ -35,7 +35,7 @@ export default function CargoSearch() {
     // here should request the data
     //
     const response = await axios.post(
-      `http://api.superunionlogistics.com:8000/tracking`,
+      `https://www.superunionlogistics.com/api/tracking`,
       `tracking_number=${code}`,
       {
         headers: {
