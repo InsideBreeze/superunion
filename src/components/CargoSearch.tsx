@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Image from 'next/image'
 import * as React from 'react'
 import CargoTrackingResult from './CargoTrackingResult'
+import { twMerge } from 'tailwind-merge'
 
 export default function CargoSearch() {
   const [history, setHistory] = React.useState<string[]>([])
@@ -15,6 +16,9 @@ export default function CargoSearch() {
   const [notFound, setNotFound] = React.useState(false)
 
   const [isFocus, setIsFoucs] = React.useState(false)
+
+
+  console.log(notFound, 'not found')
 
   React.useEffect(() => {
     if (inputRef) {
@@ -54,6 +58,7 @@ export default function CargoSearch() {
       setTraces(traces)
       setParcelData(parcelData)
       setCode('')
+      setNotFound(false)
     } else {
       setNotFound(true)
       inputRef.current.focus()
@@ -61,12 +66,12 @@ export default function CargoSearch() {
   }
 
   return (
-    <div className="bg-white pb-[200px]">
+    <div className="bg-white">
       <div className="relative flex flex-col items-center">
         <p className="mb-[15px] mt-[84px] text-[25px] text-[#0052D9]">
           Cargo Tracking
         </p>
-        <div className="relative">
+        <div className={twMerge("relative", code.length > 0 && !parcelData && 'pb-[500px]')}>
           <div className="relative flex">
             <input
               className="h-[60px] w-[480px]  border-[2px]
@@ -96,19 +101,20 @@ export default function CargoSearch() {
             </button>
           </div>
           <AnimatePresence>
-            {isFocus && code.length === 0 && history.length > 0 && (
+                      {isFocus && code.length === 0 && history.length > 0
+            && (
               <motion.div
-                className="index-100 absolute top-[60px] h-[120px] w-[540px] bg-white pl-5 pr-4 pt-[18px] shadow-xl"
+                className="index-100 absolute top-[60px] h-[150px] w-[540px] bg-white pl-5 pr-4 pt-[18px] shadow-xl"
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
               >
                 <p className="text-[#2F2F2F]">History</p>
-                <div className="mt-[10px] flex space-x-5 text-[#646464]">
+                <div className="mt-[10px] flex text-[#646464] flex-wrap items-start">
                   {history.map((code) => (
                     <div
                       key={code}
-                      className="flex cursor-pointer items-center space-x-1 bg-[#E2E2E2] px-[9px] py-[5px]"
+                      className="flex cursor-pointer mr-4 mb-2 items-center space-x-3 bg-[#E2E2E2] px-[20px] py-[5px]"
                       onClick={() => setCode(code)}
                     >
                       <p>{code}</p>
