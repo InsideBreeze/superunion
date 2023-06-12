@@ -9,14 +9,15 @@ interface Props {
 }
 export default function CargoTrackingResult({ parcelData, traces }: Props) {
   return (
-    <div className="mt-[152px] mb-[200px]">
-      <Description title="Result">
+    <div className="mt-[152px] mb-[200px]  flex justify-center">
+          <div className=''>
+          <Description title="Result" className=''>
         <div className="mt-[28px] space-y-8">
           {parcelData &&
             Object.keys(parcelData).map((key) => (
               <div
                 key={key}
-                className="flex h-[88px] w-[857px] border border-[var(--blue)] "
+                className={twMerge("flex h-[88px] w-[857px] border border-[var(--blue)]", parcelData[key as keyof Status].length === 0 && 'hidden')}
               >
                 <div className="grid h-full w-[258px] place-items-center truncate bg-[var(--blue)] text-2xl text-white">
                   {key}
@@ -59,7 +60,7 @@ export default function CargoTrackingResult({ parcelData, traces }: Props) {
                 </div>
                 <div
                   className={twMerge(
-                    'absolute left-[7px] top-[17px] h-[75px] w-[2px] bg-[var(--blue)] text-[red]',
+                    'absolute left-[7px] top-[17px] h-[75px] w-[2px] bg-[var(--blue)]',
                     idx === traces.length - 1 && 'hidden',
                     idx === traces.length - 2 && 'bg-[#999999]'
                   )}
@@ -68,6 +69,7 @@ export default function CargoTrackingResult({ parcelData, traces }: Props) {
             ))}
           </div>
         </Description>
+      </div>
       </div>
     </div>
   )

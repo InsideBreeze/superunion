@@ -17,9 +17,6 @@ export default function CargoSearch() {
 
   const [isFocus, setIsFoucs] = React.useState(false)
 
-
-  console.log(notFound, 'not found')
-
   React.useEffect(() => {
     if (inputRef) {
       inputRef.current.focus()
@@ -34,8 +31,10 @@ export default function CargoSearch() {
     }
   }, [])
 
+  console.log(parcelData, 'data')
+
   /// send request
-  const handleSearch = async () => {
+  const handleSearch = async (code: string) => {
     // here should request the data
     //
     const response = await axios.post(
@@ -51,6 +50,7 @@ export default function CargoSearch() {
 
     if (res.code === 200) {
       if (!history.includes(code)) {
+        console.log(code, 'code....')
         setHistory([code, ...history])
         localStorage.setItem('cargo', JSON.stringify([code, ...history]))
       }
@@ -71,7 +71,7 @@ export default function CargoSearch() {
         <p className="mb-[15px] mt-[84px] text-[25px] text-[#0052D9]">
           Cargo Tracking
         </p>
-        <div className={twMerge("relative", code.length > 0 && !parcelData && 'pb-[500px]')}>
+        <div className={twMerge("relative")}>
           <div className="relative flex">
             <input
               className="h-[60px] w-[480px]  border-[2px]
@@ -83,7 +83,7 @@ export default function CargoSearch() {
               onFocus={() => setIsFoucs(true)}
               onBlur={() => setIsFoucs(false)}
             />
-            <button onClick={handleSearch} disabled={code.trim().length === 0}>
+    <button onClick={() => handleSearch(code)} disabled={code.trim().length === 0}>
               <Image
                 src="/images/rec.png"
                 width={60}
@@ -115,7 +115,9 @@ export default function CargoSearch() {
                     <div
                       key={code}
                       className="flex cursor-pointer mr-4 mb-2 items-center space-x-3 bg-[#E2E2E2] px-[20px] py-[5px]"
-                      onClick={() => setCode(code)}
+                      onClick={async () => {
+                        handleSearch(code)
+                      }}
                     >
                       <p>{code}</p>
                       <div
@@ -152,7 +154,7 @@ export default function CargoSearch() {
             )}
           </AnimatePresence>
         </div>
-        {code.length === 0 && !parcelData && !notFound && (
+        {!parcelData && (
           <div className="mb-[200px]">
             <Image
               src="/images/cargo_search.png"
@@ -168,7 +170,7 @@ export default function CargoSearch() {
         <CargoTrackingResult parcelData={parcelData} traces={traces} />
       )}
       {notFound && (
-        <p className="mt-[150px] text-center text-2xl text-[red] pb-[200px]">
+        <p className="mt-[150px] text-center text-2xl pb-[200px]">
           Not Found, please check your input :){' '}
         </p>
       )}

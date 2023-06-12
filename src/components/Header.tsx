@@ -1,9 +1,9 @@
 'use client'
-import Link from 'next/link'
-import * as React from 'react'
-import { usePathname } from 'next/navigation'
-import { twMerge } from 'tailwind-merge'
 import Image from 'next/image'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import * as React from 'react'
+import { twMerge } from 'tailwind-merge'
 
 /* should be client component */
 export default function Header() {
@@ -33,28 +33,39 @@ export default function Header() {
           />
         </div>
         {/* links */}
-        <div className="space-x-[40px] whitespace-nowrap text-xl">
+        <div className="space-x-[40px] whitespace-nowrap text-xl flex">
+                  <div className='w-[120px] text-center'>
           <Link href="/" className={`${pathname === '/' && 'active_link'}`}>
             Our Service
           </Link>
+          </div>
+                            <div className='w-[120px] text-center'>
+
           <Link
             href="/about"
             className={`${pathname === '/about' && 'active_link'}`}
           >
             About us
           </Link>
+          </div>
+                            <div className='w-[120px] text-center'>
+
           <Link
             href="/workflow"
             className={`${pathname === '/workflow' && 'active_link'}`}
           >
             Workflow
           </Link>
+          </div>
+                            <div className='w-[120px] text-center'>
+
           <Link
             href="/tracking"
             className={`${pathname === '/tracking' && 'active_link'}`}
           >
             Tracking
           </Link>
+          </div>
         </div>
       </nav>
       <div
